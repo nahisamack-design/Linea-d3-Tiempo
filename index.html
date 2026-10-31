@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Alexandr Wang: The Growth Curve</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;800&family=Instrument+Sans:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>Alexandr Wang</h1>
+  <p>From a Los Alamos math prodigy to Meta's Chief AI Officer. Click a point on the curve.</p>
+  <div class="legend">
+    <span class="s1">Álvaro · The Prodigy</span>
+    <span class="s2">Jeffrey · The Founder</span>
+    <span class="s3">Nathan · The AI Leader</span>
+  </div>
+</header>
+
+<section class="chart" aria-label="Timeline chart">
+  <svg id="curve" viewBox="0 0 1000 260" preserveAspectRatio="none"></svg>
+  <div id="nodes"></div>
+</section>
+
+<article id="card" aria-live="polite">
+  <div class="stat" id="stat">
+    <div class="rings"></div>
+    <div class="emoji" id="emoji"></div>
+    <div class="big" id="big"></div>
+    <div class="label" id="label"></div>
+    <div class="age">
+      <span id="ageTxt"></span>
+      <div class="bar"><i id="ageFill"></i></div>
+    </div>
+  </div>
+  <div class="text">
+    <span id="who" class="badge"></span>
+    <h2 id="year"></h2>
+    <h3 id="title"></h3>
+    <p id="body"></p>
+    <p id="fact" class="fact"></p>
+  </div>
+</article>
+
+<footer>
+  <button id="prev">Previous</button>
+  <span id="count"></span>
+  <button id="next">Next</button>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
+</html>
